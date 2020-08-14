@@ -4,17 +4,171 @@
 }
 
 .experience{
-    margin-top: 74px;
+    margin: 60px 0;
+    list-style: none;
+    line-height: 0%;
+    color: $second-color;
+    & li {
+        margin: 75px 0;
+    }
+    & p {
+        padding-right: 230px;
+        // justify-content: space-between;
+    }
+    & p:last-child{
+        padding-right: 0;
+    }
+    // justify-content: space-between;
+    // width: 300px;
 }
 
-.html {
-    display: flex;
-    justify-content: space-between;
-    p{
-        padding-right: 160px;
+.html{
+    &_bar {
+        display: block;
+        height: 2px;
+        width: 300px;
+        & span {
+            height: 2px;
+            float: left;
+            border: 5px solid;
+            width: 100%;
+        }   
     }
-    hr{
-        border: 2px solid $second-color;
+}
+
+.CSS {
+    & p{
+        padding-right: 245px;
     }
-    
+    &_bar{
+        display: block;
+        height: 2px;
+        width: 300px;
+        & span {
+            height: 2px;
+            float: left;
+            border: 5px solid;
+            width: 85%;
+        } 
+    }
+}
+
+.SASS {
+    & p{
+        padding-right: 220px;
+    }
+    &_bar{
+        display: block;
+        height: 2px;
+        width: 300px;
+        & span {
+            height: 2px;
+            float: left;
+            border: 5px solid;
+            width: 100%;
+        } 
+    }
+}
+
+.JavaScripts {
+    & p{
+        padding-right: 170px;
+    }
+    &_bar{
+        display: block;
+        height: 2px;
+        width: 300px;
+        & span {
+            height: 2px;
+            float: left;
+            border: 5px solid;
+            width: 80%;
+        } 
+    }
+}
+
+.React {
+    & p {
+        padding-right: 220px;
+    }
+    &_bar{
+        display: block;
+        height: 2px;
+        width: 300px;
+        & span {
+            height: 2px;
+            float: left;
+            border: 5px solid;
+            width: 60%;
+        } 
+    }
+  
+}
+
+.Python {
+    & p {
+        padding-right: 210px;
+    }
+    &_bar{
+        display: block;
+        height: 2px;
+        width: 300px;
+        & span {
+            height: 2px;
+            float: left;
+            border: 5px solid;
+            width: 70%;
+        }
+    }
+  
+}
+
+.DevOps {
+    & p{
+        padding-right: 205px;
+    }
+    &_bar{
+        display: block;
+        height: 2px;
+        width: 300px;
+        & span {
+            height: 2px;
+            float: left;
+            border: 5px solid;
+            width: 90%;
+        } 
+    }
+  
+}
+
+.Django {
+    & p{
+        padding-right: 210px;
+    }
+    &_bar{
+        display: block;
+        height: 2px;
+        width: 300px;
+        & span {
+            height: 2px;
+            float: left;
+            border: 5px solid;
+            width: 70%;
+        } 
+    }
+  
+}
+
+.Java {
+    &_bar{
+        display: block;
+        height: 2px;
+        width: 300px;
+        & span {
+            height: 2px;
+            float: left;
+            border: 5px solid;
+            width: 40%;
+        } 
+    }
 }
