@@ -7,7 +7,7 @@
 
 .menu {  
     margin-top: 28px;
-    padding-left: 112px;
+    padding-left: 60px;
     &_item{
         display: inline;    
     }
@@ -36,10 +36,9 @@
 .header_text{
     color: #FFFFFF;
     text-align: center;
-    
+    padding-top: 120px;
     h1{
         font-weight: 900;
-        padding-top: 194px;
         font-size: 72px;
         line-height: 84px;
         .iam {
@@ -68,6 +67,7 @@
     border: 3px solid #FFFFFF;
     box-sizing: border-box;
     color: #FFFFFF;
+    font-size: 20px;
     font-weight: bold;
     img{
         margin-left: 30px;
