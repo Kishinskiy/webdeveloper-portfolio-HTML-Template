@@ -20,16 +20,22 @@
         padding: 0 25px;
         
     }
-    &_link:hover {
+    &_link:hover{
         text-decoration: none;
         color: $second-color;
     }
+
     &_button {
         // font-size: 20px;
         padding: 5px 0;
         border: 2px solid #FFFFFF;
         box-sizing: border-box;
         border-radius: 100px;
+    }
+    &_button:hover {
+        border: 2px solid $second-color;
+        border-radius: 100px;
+        padding: 5px 0;
     }
 }
 
