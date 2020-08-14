@@ -1,0 +1,20 @@
+.about_text {
+    font-size: 24px;
+    color: $text-color
+}
+
+.experience{
+    margin-top: 74px;
+}
+
+.html {
+    display: flex;
+    justify-content: space-between;
+    p{
+        padding-right: 160px;
+    }
+    .xp_name {
+        border-bottom: 10px solid $second-color;
+    }
+    
+}

@@ -14,7 +14,16 @@
         margin: 0 30px;
     }
     @include lg {
-        max-width: 950px;
+        max-width: 1200px;
         margin: 0 auto;
     }
 }
+@import 'blocks/heaeder';
+
+.section_header {
+    font-weight: 900;
+    margin: 74px 0;
+    border-bottom: 4px solid black;
+}
+
+@import 'blocks/about'
