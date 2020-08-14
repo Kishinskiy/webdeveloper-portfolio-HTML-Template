@@ -1,0 +1,20 @@
+@import 'libs/bootstrap-reboot.min';
+
+@import 'base/mixins';
+@import 'base/variables';
+@import 'base/animations';
+* {
+    font-family: 'Roboto', sans-serif;
+}
+.container {
+    @include sm {
+        min-width: 450px;
+    }
+    @include md {
+        margin: 0 30px;
+    }
+    @include lg {
+        max-width: 950px;
+        margin: 0 auto;
+    }
+}
