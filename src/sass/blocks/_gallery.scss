@@ -1,0 +1,9 @@
+.gallery {
+    padding-bottom: 75px;
+    column-count: 3;
+    // column-width: 99%;
+    &_image{
+        margin: 0;
+        padding: 0;
+    }
+}
