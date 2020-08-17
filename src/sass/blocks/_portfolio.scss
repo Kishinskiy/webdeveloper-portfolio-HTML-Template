@@ -1,17 +1,16 @@
 .portfolio {
     background: $bg-color;
-}
-
-.portfolio_menu {
-    margin-bottom: 56px;
-    &_button{
-        background: $second-color;
-        color: #ffffff;
-        width: 100%;
-    }
-    &_button:hover {
-        color:#ffffff;
-        bottom: 10px;
+    &_menu {
+        margin-bottom: 56px;
+        &_button{
+            background: $second-color;
+            color: #ffffff;
+            width: 100%;
+        }
+        &_button:hover {
+            color:#ffffff;
+            bottom: 10px;
+        }
     }
 }
 

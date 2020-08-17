@@ -3,6 +3,8 @@
 @import 'base/mixins';
 @import 'base/variables';
 @import 'base/animations';
+@import 'blocks/buttons';
+
 * {
     font-family: 'Roboto', sans-serif;
 }
@@ -18,7 +20,7 @@
         margin: 0 auto;
     }
 }
-@import 'blocks/heaeder';
+@import "blocks/promo";
 
 .section_header {
     font-weight: 900;
@@ -30,3 +32,4 @@
 @import 'blocks/portfolio';
 @import 'blocks/blog';
 @import 'blocks/contact';
+@import 'blocks/footer';

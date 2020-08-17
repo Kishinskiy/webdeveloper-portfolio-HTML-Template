@@ -1,0 +1,32 @@
+.menu {
+    margin-top: 28px;
+    padding-left: 60px;
+    &_item{
+        display: inline;
+    }
+    &_link{
+        color: #fff;
+        font-size: 18px;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 0 25px;
+
+    }
+    &_link:hover{
+        text-decoration: none;
+        color: $second-color;
+    }
+
+    &_button {
+        border-radius: 100px;
+        padding: 5px 20px;
+        font-size: 18px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    &_button:hover {
+        border: 2px solid $second-color;
+        color: $second-color;
+    }
+}

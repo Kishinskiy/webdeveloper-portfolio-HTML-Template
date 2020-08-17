@@ -1,0 +1,51 @@
+.header {
+    width: 100%;
+    height: 800px;
+    background: url(../../img/background.png)center center/cover no-repeat;
+    &_text {
+        color: #FFFFFF;
+        text-align: center;
+        padding-top: 120px;
+        h1{
+            font-weight: 900;
+            font-size: 72px;
+            line-height: 84px;
+            .iam {
+                color: black;
+            }
+            .wd {
+                font-size: 96px;
+            }
+        }
+        h4{
+            font-weight: 900;
+            font-size: 48px;
+        }
+        h2 {
+            font-weight: 900;
+            font-size: 64px;
+            span {
+                font-size: 40px;
+            }
+        }
+    }
+    &_btn {
+        margin-top: 120px;
+        font-size: 20px;
+        font-weight: bold;
+        border: 3px solid #FFFFFF;
+
+        img{
+            margin-left: 30px;
+            margin-bottom: 5px;
+        }
+    }
+    &_btn:hover {
+        img {
+            transform: rotate(90deg);
+            animation-duration: 3s;
+        }
+    }
+}
+
+@import "./main_menu";

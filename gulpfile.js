@@ -5,6 +5,9 @@ const rename = require("gulp-rename");
 const autoprefixer = require('gulp-autoprefixer');
 const cleanCSS = require('gulp-clean-css');
 const open = require("gulp-open");
+const build = require('gulp-build');
+
+const dist = "./docs";
 
 // Static server
 gulp.task('server', function() {
@@ -33,5 +36,10 @@ gulp.task('watch', function(){
     gulp.watch("src/*.html").on("change", browserSync.reload);
 });
 
+gulp.task('build', function() {
+    gulp.src('src/js/*.js')
+        .pipe(build({ GA_ID: '123456' }))
+        .pipe(gulp.dest(dist))
+});
 
 gulp.task('default', gulp.parallel('watch', 'server', 'styles'));

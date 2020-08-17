@@ -4,8 +4,13 @@
         color: #ffffff;
         border-bottom: 3px solid #ffffff;
     }
-    .btn {
-        
-        margin: 75px 0;
+    &_btn {
+        margin-bottom: 75px;
+        font-size: 30px;
+        font-weight: 900;
+        border-radius: 100px;
+        span{
+            color: $second-color;
+        }
     }
 }

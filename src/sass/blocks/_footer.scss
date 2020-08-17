@@ -1,0 +1,19 @@
+footer {
+    width: 100%;
+    height: 277px;
+    background-color: black;
+}
+
+.social {
+    position: relative;
+    margin-top: 115px;
+    img {
+        padding-right: 70px;
+    }
+}
+
+.up-arrow {
+    position: absolute;
+    transform: translateX(1260px);
+    margin-top: 115px;
+}
