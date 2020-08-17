@@ -36,10 +36,31 @@ gulp.task('watch', function(){
     gulp.watch("src/*.html").on("change", browserSync.reload);
 });
 
-gulp.task('build', function() {
-    gulp.src('src/js/*.js')
+gulp.task('build', gulp.parallel(
+    function() {
+    return gulp.src('src/*.html')
         .pipe(build({ GA_ID: '123456' }))
         .pipe(gulp.dest(dist))
-});
+},
+function() {
+    return gulp.src("src/sass/**/*.+(scss|sass)")
+    .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
+    .pipe(rename({
+        prefix: "",
+        suffix: ".min",
+    }))
+    .pipe(autoprefixer())
+    .pipe(cleanCSS({compatibility: 'ie8'}))
+    .pipe(gulp.dest("docs/css"))
+},
+function (){
+    return gulp.src('src/img/**/*.+(jpg|png|svg)')
+    .pipe(gulp.dest('docs/img'))
+},
+function(){
+    return gulp.src('src/*.js')
+    .pipe(gulp.dest('docs/js'))
+}
+));
 
 gulp.task('default', gulp.parallel('watch', 'server', 'styles'));
