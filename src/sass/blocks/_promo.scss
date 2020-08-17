@@ -31,19 +31,20 @@
     }
     &_btn {
         margin-top: 120px;
-        font-size: 20px;
+        font-size: 30px;
         font-weight: bold;
         border: 3px solid #FFFFFF;
 
         img{
             margin-left: 30px;
             margin-bottom: 5px;
+            width: 30px;
         }
     }
     &_btn:hover {
         img {
-            transform: rotate(90deg);
             animation-duration: 3s;
+            transform: rotate(90deg);
         }
     }
 }
